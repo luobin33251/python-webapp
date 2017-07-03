@@ -69,7 +69,7 @@ class StringField(Field):
 		super().__init__(name,ddl,primary_key,default)
 
 class BooleanField(Field):
-	def __init__(self,name=None,default=None):
+	def __init__(self,name=None,default=False):
 		super().__init__(name,'boolean',False,default)
 
 class IntegerField(Field):
